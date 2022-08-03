@@ -273,6 +273,9 @@ hr {
         width: 100%;
         padding: 0%;
     }
+    .top-banner{
+        width: 258px;
+    }
 
     .top-banner {
         width: 100%;
@@ -280,6 +283,12 @@ hr {
         /* display: inline; */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .title{
+        padding-left: 0px;
+        align-items: flex-start;
+        justify-content: center;
+        line-height: 30px;
     }
 
     .title h1 {
