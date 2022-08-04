@@ -25,6 +25,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 /* header > div {
     width: 50%;
 } */
@@ -267,9 +268,8 @@ hr {
 
 /* mobile display */
 
-@media only screen and (max-width: 576px) {
-    header{
-        /* flex-direction: column; */
+@media only screen and (max-width: 688px) {
+    header {
         width: 100%;
         padding: 0%;
     }
@@ -278,11 +278,12 @@ hr {
         width: 100%;
         text-align: center;
         /* display: block; */
-        margin: 20px 20px 0px 20px;
+        margin: 20px 20px 0px 0px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .title{
+
+    .title {
         width: 100%;
         /* width: 258px; */
         height: 100%;
@@ -290,10 +291,9 @@ hr {
         padding-left: 0px;
         align-items: flex-start;
         justify-content: center;
-        /* line-height: 30px; */
-    }
+        }
 
-    .title h1 {
+    .title > h1 {
         font-size: 30px;
         text-align: center;
     }
@@ -329,24 +329,33 @@ hr {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .container {
+    .container, .match-box {
         flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
     }
 
-    .matches {
+    .matches, .match-schedules {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-        /* margin-left: 11%; */
+        margin: 0px 0px 4px 30px;
     }
-    .match{
-        width: 100%;
+
+    .match, .schedule {
+        width: 350px;
+
+    }
+    .footer-title h1{
+        padding-top: 24px;
+    }
+    .servies{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-/* @media (max-width: 768px) {
-    header{
-        width: 100%;
-    }
-} */
+@media only screen and (min-width: 688px) and (max-width: 992px)
