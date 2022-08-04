@@ -291,9 +291,9 @@ hr {
         padding-left: 0px;
         align-items: flex-start;
         justify-content: center;
-        }
+    }
 
-    .title > h1 {
+    .title>h1 {
         font-size: 30px;
         text-align: center;
     }
@@ -325,17 +325,20 @@ hr {
     }
 
     .info {
+        padding: 0%;
         display: grad;
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .container, .match-box {
+    .container,
+    .match-box {
         flex-direction: column;
         justify-content: center;
         /* align-items: center; */
     }
 
-    .matches, .match-schedules {
+    .matches,
+    .match-schedules {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -343,19 +346,80 @@ hr {
         margin: 0px 0px 4px 30px;
     }
 
-    .match, .schedule {
+    .match,
+    .schedule {
         width: 350px;
 
     }
-    .footer-title h1{
+
+    .footer-title h1 {
         padding-top: 24px;
     }
-    .servies{
-        
+
+    .servies {
+
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
 
-@media only screen and (min-width: 688px) and (max-width: 992px)
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    header {
+        width: 100%;
+        padding: 0%;
+        margin-bottom: 30px;
+    }
+
+    .top-banner {
+        width: 100%;
+        text-align: center;
+        /* display: block; */
+        margin: 20px 20px 0px 0px;
+
+    }
+
+    .title h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .player img {
+        width: 320 px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        background: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-color: #B9B9B9;
+        border: 0;
+        padding: 0%;
+
+    }
+
+    .info {
+        width: 230px;
+        justify-content: space-evenly;
+    }
+
+    .matches {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* .match {
+        margin-bottom: 30px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        width: 100%;
+        font-weight: 500;
+    } */
+
+}
