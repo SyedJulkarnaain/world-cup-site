@@ -394,17 +394,20 @@ hr {
 
     .information {
         width: 100%;
+        height: 100px;
         background: none;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         border-color: #B9B9B9;
         border: 0;
-        padding: 0%;
+        margin-left: 50px;
+        justify-content: end;
 
     }
 
     .info {
-        width: 230px;
+        width: 252px;
+        height: 64px;
         justify-content: space-evenly;
     }
 
@@ -412,14 +415,18 @@ hr {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-items: end;
+        gap: 20px;
+        margin-left: 20px;
+
     }
 
-    /* .match {
+    .match {
         margin-bottom: 30px;
         border: 1px solid lightgray;
         border-radius: 10px;
-        width: 100%;
+        width: 430px;
         font-weight: 500;
-    } */
+    }
 
 }
