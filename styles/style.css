@@ -422,7 +422,7 @@ hr {
 
     }
 
-    .match, .schedule {
+    .match {
         margin-bottom: 30px;
         border: 1px solid lightgray;
         border-radius: 10px;
