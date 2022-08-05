@@ -388,7 +388,7 @@ hr {
         width: 320 px;
     }
 
-    .container {
+    .container, .match-box {
         flex-direction: column;
     }
 
@@ -400,8 +400,9 @@ hr {
         grid-template-columns: repeat(3, 1fr);
         border-color: #B9B9B9;
         border: 0;
+        gap: 20px;
         margin-left: 50px;
-        justify-content: end;
+        justify-content: center;
 
     }
 
@@ -411,7 +412,7 @@ hr {
         justify-content: space-evenly;
     }
 
-    .matches {
+    .matches, .match-schedules {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -421,12 +422,15 @@ hr {
 
     }
 
-    .match {
+    .match, .schedule {
         margin-bottom: 30px;
         border: 1px solid lightgray;
         border-radius: 10px;
-        width: 430px;
+        width: 400px;
         font-weight: 500;
+    }
+    .servies{
+        margin: 30px;
     }
 
 }
